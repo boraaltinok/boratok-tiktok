@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "424402219124",
+    "project_id": "boratok-fb",
+    "storage_bucket": "boratok-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424402219124:android:f9125d33cdf356af756121",
+        "android_client_info": {
+          "package_name": "com.example.boratok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424402219124-orgv5umnkc1vm216s8k8s2l75d4hgjel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDntj2uzX5qWEQSY5UEJ6j-fBCklbGcboo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424402219124-orgv5umnkc1vm216s8k8s2l75d4hgjel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "424402219124-ntqct8rt62j87bvbe21420urovijnnc7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.boratok"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

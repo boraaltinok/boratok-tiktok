@@ -36,18 +36,17 @@ class SignUpScreen extends StatelessWidget {
               const CircleAvatar(
                 radius: 64,
                 backgroundImage: NetworkImage(
-                    'https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png'
-                ),
+                    'https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png'),
                 backgroundColor: Colors.black,
               ),
-              Positioned(bottom: -10, left: 80, child: IconButton(
-                onPressed: () {
-                  print("pick image");
-                },
-                icon: const Icon(
-                  Icons.add_a_photo
+              Positioned(
+                bottom: -10,
+                left: 80,
+                child: IconButton(
+                  onPressed: () => authController.pickImage(),
+                  icon: const Icon(Icons.add_a_photo),
                 ),
-              ),)
+              )
             ],
           ),
           const SizedBox(
@@ -98,7 +97,11 @@ class SignUpScreen extends StatelessWidget {
                 borderRadius: const BorderRadius.all(Radius.circular(5))),
             child: InkWell(
               onTap: () {
-                print("user");
+                authController.registerUser(
+                    _userNameController.text,
+                    _emailController.text,
+                    _passwordController.text,
+                    authController.profilePhoto);
               },
               child: const Center(
                   child: Text(
