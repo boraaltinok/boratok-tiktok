@@ -18,6 +18,7 @@ class AuthController extends GetxController {
   late Rx<User?> _user; // this is not model user this is FİREBASE AUTH USER
 
   File? get profilePhoto => _pickedImage.value;
+  User get user => _user.value!;
 
   @override
   void onReady() {

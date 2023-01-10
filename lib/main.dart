@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme:
           ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
       title: 'BoraTok',
-      home: LoginScreen(),
+      home: SignUpScreen(),
     );
   }
 }
