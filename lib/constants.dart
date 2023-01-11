@@ -1,5 +1,6 @@
 import 'package:boratok/controllers/auth_controller.dart';
 import 'package:boratok/views/screens/add_video_screen.dart';
+import 'package:boratok/views/screens/search_screen.dart';
 import 'package:boratok/views/screens/video_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,7 +10,7 @@ import 'package:flutter/material.dart';
 
 List pages = [
   VideoScreen(),
-  Text('Messages Screen'),
+  SearchScreen(),
   const AddVideoScreen(),
   Text('Messages Screen'),
   Text('Profile Screen'),

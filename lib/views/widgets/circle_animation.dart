@@ -26,8 +26,8 @@ class _CircleAnimationState extends State<CircleAnimation>
   @override
   void dispose() {
     // TODO: implement dispose
-    super.dispose();
     controller.dispose(); //to avoid memory leak
+    super.dispose();
   }
 
   @override
